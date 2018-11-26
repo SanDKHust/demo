@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_ll"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/audio_height"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/skip_back_btn"
+        android:layout_width="@dimen/audio_button_size"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:padding="@dimen/margin_8"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_skip_back" />
+
+    <ImageButton
+        android:id="@+id/play_pause_btn"
+        android:layout_width="@dimen/audio_button_size"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_play_filled" />
+
+    <ImageButton
+        android:id="@+id/skip_next_btn"
+        android:layout_width="@dimen/audio_button_size"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:padding="@dimen/margin_8"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_skip_next" />
+
+    <TextView
+        android:id="@+id/current_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:text="0:00"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/audio_text_size" />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/total_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/margin_8"
+        android:text="0:00"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/audio_text_size" />
+
+    <ImageButton
+        android:id="@+id/replay_audio_btn"
+        android:layout_width="@dimen/audio_button_size"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:padding="@dimen/margin_8"
+        android:scaleType="centerInside"/>
+
+    <ImageButton
+        android:id="@+id/speed_audio_btn"
+        android:layout_width="@dimen/audio_button_size"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:padding="@dimen/margin_8"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_speed" />
+
+    <ImageButton
+        android:id="@+id/download_audio_btn"
+        android:layout_width="@dimen/audio_button_size"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:padding="@dimen/margin_8"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_download" />
+
+</LinearLayout>
